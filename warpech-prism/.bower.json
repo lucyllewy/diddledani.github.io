@@ -1,0 +1,23 @@
+{
+  "name": "warpech-prism",
+  "main": [
+    "warpech-prism.html"
+  ],
+  "dependencies": {
+    "prism": "gh-pages"
+  },
+  "keywords": [
+    "web-components"
+  ],
+  "homepage": "https://github.com/warpech/warpech-prism",
+  "_release": "d19c124465",
+  "_resolution": {
+    "type": "branch",
+    "branch": "gh-pages",
+    "commit": "d19c1244651a595a5c04c10fdf9ea01c2dce04e2"
+  },
+  "_source": "git://github.com/warpech/warpech-prism.git",
+  "_target": "gh-pages",
+  "_originalSource": "warpech-prism",
+  "_direct": true
+}
