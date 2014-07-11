@@ -1,0 +1,28 @@
+{
+  "name": "clear_component",
+  "version": "0.0.0",
+  "authors": [
+    "Daniel Llewellyn <daniel@bowlhat.net>"
+  ],
+  "description": "Basic css clear:{left|right|both} support",
+  "main": "clear.html",
+  "keywords": [
+    "clear",
+    "div",
+    "both",
+    "left",
+    "right",
+    "web-components"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "polymer/polymer#~0.3.3"
+  }
+}
