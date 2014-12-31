@@ -33,6 +33,5 @@
   },
   "_source": "git://github.com/sabarasaba/github-ribbon.git",
   "_target": "~0.0.1",
-  "_originalSource": "github-ribbon",
-  "_direct": true
+  "_originalSource": "github-ribbon"
 }

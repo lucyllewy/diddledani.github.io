@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Banner Bar Demo</title>
+	<style>
+		body {
+			background-color: #ccf;
+			margin: 0;
+		}
+		section, footer {
+			max-width: 540px;
+			margin: 0 auto;
+			padding: 0 20px 20px;
+		}
+		footer {
+			font-size: small;
+		}
+	</style>
+	<script src="../platform/platform.js"></script>
+	<link rel="import" href="banner.html" />
+	<link rel="import" href="../github-ribbon/src/github-ribbon.html" />
+	<link rel="import" href="../warpech-prism/warpech-prism.html" />
+</head>
+<body unresolved>
+	<banner-bar	align="right"
+				bgcolor="#fff"
+				height="50px"
+				maxWidth="960px">
+		<img src="example_logo.jpg" alt="example logo" />
+	</banner-bar>
+
+	<github-ribbon user="diddledan" repo="banner-bar" color="red" position="left"></github-ribbon>
+
+	<section>
+		<h1>Banner bar web component</h1>
+		<p>The above white area and the shadow beneath are an example of the <code>&lt;banner-bar&gt;</code> web component</p>
+		<h2>Usage</h2>
+<warpech-prism language="markup">&lt;html&gt;
+	&lt;head&gt;
+		&lt;script src="path/to/platform.js"&gt;&lt;/script&gt;
+		&lt;link rel="import" href="path/to/banner.hmtl" /&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+&lt;banner-bar
+	align="right"
+	bgcolor="#fff"
+	height="50px"
+	maxWidth="960px"&gt;
+	&lt;img src="example_logo.jpg" alt="example logo" /&gt;
+&lt;/banner-bar&gt;
+	&lt;/body&gt;
+&lt;/html&gt;</warpech-prism>
+		<dl>
+			<dt>align</dt><dd>Text alignment: left, center or right.</dd>
+			<dt>bgcolor</dt><dd>Background colour of the banner bar</dd>
+			<dt>height</dt><dd>height of the image which also specifies the height of the banner bar. If the image is smaller than this height it will be scaled.</dd>
+			<dt>maxWidth</dt><dd>The banner bar is responsive. This attribute specifies a "page width" whereby the image will right-aligned in a box the width specified here which will be centered in the page. Use "100%" to not use this feature.</dd>
+		</dl>
+	</section>
+
+	<footer>
+		Copyright &copy; 2014 <em>Daniel Llewellyn</em> of <a href="https://bowlhat.net/">Bowl Hat</a> and <a href="http://www.bang-on.net/">Bang Communications</a>
+	</footer>
+</body>
+</html>

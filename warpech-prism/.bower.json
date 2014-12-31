@@ -1,5 +1,6 @@
 {
   "name": "warpech-prism",
+  "version": "0.1.0",
   "main": [
     "warpech-prism.html"
   ],
@@ -10,14 +11,14 @@
     "web-components"
   ],
   "homepage": "https://github.com/warpech/warpech-prism",
-  "_release": "d19c124465",
+  "_release": "0.1.0",
   "_resolution": {
-    "type": "branch",
-    "branch": "gh-pages",
-    "commit": "d19c1244651a595a5c04c10fdf9ea01c2dce04e2"
+    "type": "version",
+    "tag": "0.1.0",
+    "commit": "7bec65b3755e22f3e3ef9470bf8e6305fff91ddd"
   },
   "_source": "git://github.com/warpech/warpech-prism.git",
-  "_target": "gh-pages",
+  "_target": "~0.1.0",
   "_originalSource": "warpech-prism",
   "_direct": true
 }
