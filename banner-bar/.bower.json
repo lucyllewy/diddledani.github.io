@@ -1,10 +1,10 @@
 {
-  "name": "banner_component",
-  "version": "0.0.3",
+  "name": "banner-bar",
+  "version": "0.1.0",
   "authors": [
     "Daniel Llewellyn <daniel@bowlhat.net>"
   ],
-  "main": "banner.html",
+  "main": "banner-bar.html",
   "license": "MIT",
   "keywords": [
     "web-components",
@@ -16,20 +16,26 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "sass"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#~0.3.3",
-    "clear": "*"
+    "polymer": "Polymer/polymer#^0.9.0",
+    "clear": "~0.0.1"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^0.9.3",
+    "web-component-tester": "*"
   },
   "homepage": "https://github.com/diddledan/banner-bar",
-  "_release": "0.0.3",
+  "_release": "0.1.0",
   "_resolution": {
     "type": "version",
-    "tag": "0.0.3",
-    "commit": "d214df63ca74f5a681615c34eb7b6af1276a7045"
+    "tag": "0.1.0",
+    "commit": "b32085b5fb97222eea3b617fe6d42a17c8c01b12"
   },
   "_source": "git://github.com/diddledan/banner-bar.git",
-  "_target": "*",
-  "_originalSource": "banner-bar"
+  "_target": "~0.1.0",
+  "_originalSource": "banner-bar",
+  "_direct": true
 }
