@@ -1,6 +1,6 @@
 {
   "name": "clear_component",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "authors": [
     "Daniel Llewellyn <daniel@bowlhat.net>"
   ],
@@ -23,6 +23,6 @@
     "tests"
   ],
   "dependencies": {
-    "polymer": "polymer/polymer#~0.3.3"
+    "polymer": "polymer/polymer#^0.5.0"
   }
 }
