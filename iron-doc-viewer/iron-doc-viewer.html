@@ -262,7 +262,7 @@ with the same name as directory it is being served from.
       var match = _githubIDs(srcUrl);
       var tag = 'master';
       if (typeof response !== 'undefined') {
-        tag = response[0].name;
+        tag = response.name;
       }
       if (match && tag) {
         srcUrl = "https://cdn.rawgit.com/" + match[1] + "/" + match[2] + "/" + tag + "/" + match[3];
