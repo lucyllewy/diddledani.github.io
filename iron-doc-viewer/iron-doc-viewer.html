@@ -266,7 +266,7 @@ with the same name as directory it is being served from.
     },
 
     _githubTagsChanged: function() {
-      if (this._githubTags == null || this._githubIsLoading == null || this._githubIsLoading === true) {
+      if (this._githubTags == null) {
         return;
       }
       var srcUrl = this._computeSrc();
