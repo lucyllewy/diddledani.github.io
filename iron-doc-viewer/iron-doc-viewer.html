@@ -263,7 +263,7 @@ with the same name as directory it is being served from.
     },
 
     _githubTagsChanged: function() {
-      if (this._githubTags == null) {
+      if (this._githubTags == null || this.querySelector('iron-ajax').loading === true) {
         return;
       }
       var srcUrl = this._computeSrc();
