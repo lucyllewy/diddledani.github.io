@@ -48,7 +48,7 @@ with the same name as directory it is being served from.
   <link rel="import" type="css" href="iron-doc-viewer.css">
 
   <template>
-    <iron-ajax auto url="[[_githubApiUrl]]" last-response="{{_githubTags}}" handle-as="json"></iron-ajax>
+    <iron-ajax auto url="[[_githubApiUrl]]" last-response="{{_githubTags}}" loading="{{_githubIsLoading}}" handle-as="json"></iron-ajax>
 
     <prism-highlighter></prism-highlighter>
     <hydrolysis-analyzer id="analyzer" src="[[_srcUrl]]" transitive="[[transitive]]" clean analyzer="{{_analyzer}}" loading="{{_loading}}"></hydrolysis-analyzer>
@@ -153,6 +153,9 @@ with the same name as directory it is being served from.
       /** The URL to the component's bower.json file */
       _githubApiUrl: String,
       
+      /** indicates when github api has finished */
+      _githubIsLoading: Boolean,
+
       /** The returned contents of the bower.json file */
       _githubTags: {
         type: Object,
@@ -263,7 +266,7 @@ with the same name as directory it is being served from.
     },
 
     _githubTagsChanged: function() {
-      if (this._githubTags == null || this.querySelector('iron-ajax').loading === true) {
+      if (this._githubTags == null || this._githubIsLoading === true) {
         return;
       }
       var srcUrl = this._computeSrc();
