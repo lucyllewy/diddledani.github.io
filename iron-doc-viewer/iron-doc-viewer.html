@@ -48,7 +48,7 @@ with the same name as directory it is being served from.
   <link rel="import" type="css" href="iron-doc-viewer.css">
 
   <template>
-    <iron-ajax auto url="[[_githubApiUrl]]" last-response="{{_githubTags}}" loading="{{_githubIsLoading}}" handle-as="json"></iron-ajax>
+    <iron-ajax auto url="[[_githubApiUrl]]" on-response="{{_githubResponse}}" handle-as="json"></iron-ajax>
 
     <prism-highlighter></prism-highlighter>
     <hydrolysis-analyzer id="analyzer" src="[[_srcUrl]]" transitive="[[transitive]]" clean analyzer="{{_analyzer}}" loading="{{_loading}}"></hydrolysis-analyzer>
@@ -153,16 +153,6 @@ with the same name as directory it is being served from.
       /** The URL to the component's bower.json file */
       _githubApiUrl: String,
       
-      /** indicates when github api has finished */
-      _githubIsLoading: Boolean,
-
-      /** The returned contents of the bower.json file */
-      _githubTags: {
-        type: Object,
-        value: function() { return {}; },
-        observer: '_githubTagsChanged'
-      },
-      
       /** The Hydrolysis element descriptors being rendered. */
       _elements: {
         type:     Array,
@@ -265,16 +255,14 @@ with the same name as directory it is being served from.
       this.async(this._updateDemoUrl);
     },
 
-    _githubTagsChanged: function() {
-      if (this._githubTags == null) {
-        return;
-      }
+    _githubResponse: function(request) {
+      var response = request.response[0];
       var srcUrl = this._computeSrc();
       // Rewrite gh-pages URLs to https://rawgit.com/
       var match = _githubIDs(srcUrl);
       var tag = 'master';
-      if (typeof this._githubTags[0] !== 'undefined') {
-        tag = this._githubTags[0].name;
+      if (typeof response !== 'undefined') {
+        tag = response[0].name;
       }
       if (match && tag) {
         srcUrl = "https://cdn.rawgit.com/" + match[1] + "/" + match[2] + "/" + tag + "/" + match[3];
