@@ -48,7 +48,7 @@ with the same name as directory it is being served from.
   <link rel="import" type="css" href="iron-doc-viewer.css">
 
   <template>
-    <iron-ajax auto url="[[_githubApiUrl]]" on-response="{{_githubResponse}}" handle-as="json"></iron-ajax>
+    <iron-ajax auto url="[[_githubApiUrl]]" on-response="_githubResponse" handle-as="json"></iron-ajax>
 
     <prism-highlighter></prism-highlighter>
     <hydrolysis-analyzer id="analyzer" src="[[_srcUrl]]" transitive="[[transitive]]" clean analyzer="{{_analyzer}}" loading="{{_loading}}"></hydrolysis-analyzer>
