@@ -1,6 +1,6 @@
 {
-  "name": "clear_component",
-  "version": "0.0.1",
+  "name": "clear",
+  "version": "0.1.1",
   "authors": [
     "Daniel Llewellyn <daniel@bowlhat.net>"
   ],
@@ -23,6 +23,10 @@
     "tests"
   ],
   "dependencies": {
-    "polymer": "polymer/polymer#^0.5.0"
+    "polymer": "polymer/polymer#^1.0.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^0.9.3",
+    "web-component-tester": "*"
   }
 }

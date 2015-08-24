@@ -1,6 +1,6 @@
 {
-  "name": "clear_component",
-  "version": "0.0.1",
+  "name": "clear",
+  "version": "0.1.1",
   "authors": [
     "Daniel Llewellyn <daniel@bowlhat.net>"
   ],
@@ -23,14 +23,18 @@
     "tests"
   ],
   "dependencies": {
-    "polymer": "polymer/polymer#^0.5.0"
+    "polymer": "polymer/polymer#^1.0.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^0.9.3",
+    "web-component-tester": "*"
   },
   "homepage": "https://github.com/diddledan/clear",
-  "_release": "0.0.1",
+  "_release": "0.1.1",
   "_resolution": {
     "type": "version",
-    "tag": "0.0.1",
-    "commit": "f7d6838dc5f5f7a666cbef28a4ef51dd8414956a"
+    "tag": "0.1.1",
+    "commit": "ccf629bd75a6d8aa724355a3fcfafb2404986dc2"
   },
   "_source": "git://github.com/diddledan/clear.git",
   "_target": "*",

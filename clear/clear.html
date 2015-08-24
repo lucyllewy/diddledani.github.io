@@ -1,19 +1,34 @@
 <link rel="import" href="../polymer/polymer.html" />
 
-<polymer-element name="clear-both" noscript>
+<dom-module id="clear-both">
 	<template>
 		<div style="clear: both"></div>
 	</template>
-</polymer-element>
+</dom-module>
 
-<polymer-element name="clear-left" noscript>
+<dom-module id="clear-left">
 	<template>
 		<div style="clear: left"></div>
 	</template>
-</polymer-element>
+</dom-module>
 
-<polymer-element name="clear-right" noscript>
+<dom-module id="clear-right">
 	<template>
 		<div style="clear: right"></div>
 	</template>
-</polymer-element>
+</dom-module>
+
+<script>
+	/**
+	 * Clears floats on both sides
+	 */
+	Polymer({is: "clear-both"});
+	/**
+	 * Clears floats on the left
+	 */
+	Polymer({is: "clear-left"});
+	/**
+	 * Clears floats on the right
+	 */
+	Polymer({is: "clear-right"});
+</script>
