@@ -16,6 +16,7 @@
   "dependencies": {
     "clear": "*",
     "polymer": "^1.0.0",
-    "iron-component-page": "^1.1.7"
+    "iron-component-page": "^1.1.7",
+    "proportional-height-box": "^1.0.0"
   }
 }

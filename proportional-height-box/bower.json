@@ -1,0 +1,27 @@
+{
+  "name": "proportional-height-box",
+  "version": "1.0.0",
+  "authors": [
+    "Daniel Llewellyn <daniel@bowlhat.net>"
+  ],
+  "description": "Polymer component to resize child element to proportional height based on the width similar to fitvids",
+  "keywords": [
+    "web-component",
+    "proportional",
+    "fitvids",
+    "ratio"
+  ],
+  "main": "proportional-height-box.html",
+  "license": "http://polymer.github.io/LICENSE.txt",
+  "homepage": "https://github.com/<USERNAME>/seed-element/",
+  "ignore": [
+    "/.*",
+    "/test/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.2.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0"
+  }
+}
