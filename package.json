@@ -1,0 +1,24 @@
+{
+  "name": "diddledan.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diddledan/diddledan.github.io.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/diddledan/diddledan.github.io/issues"
+  },
+  "homepage": "https://github.com/diddledan/diddledan.github.io#readme",
+  "dependencies": {
+    "@polymer/iron-demo-helpers": "^3.0.0-pre.25",
+    "@polymer/polymer": "^3.0.5",
+    "@webcomponents/webcomponentsjs": "^2.1.1"
+  }
+}
